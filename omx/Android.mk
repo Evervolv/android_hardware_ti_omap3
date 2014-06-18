@@ -142,12 +142,16 @@ include $(TI_OMX_VIDEO)/video_encode/Android.mk
 #include $(TI_OMX_VIDEO)/video_encode/test/Android.mk
 #include $(TI_OMX_VIDEO)/prepost_processor/Android.mk
 
-#call ittiam 720p codec
-#include $(TI_OMX_AUDIO)/aac_dec_ittiam/Android.mk
-#include $(TI_OMX_AUDIO)/aac_enc_ittiam/Android.mk
-#include $(TI_OMX_AUDIO)/wma_dec_ittiam/Android.mk
-#include $(TI_OMX_VIDEO)/video_decode_ittiam/Android.mk
-#include $(TI_OMX_VIDEO)/video_encode_ittiam/Android.mk
+#call ittiam
+include $(TI_OMX_AUDIO)/aac_dec_ittiam/Android.mk
+include $(TI_OMX_AUDIO)/aac_enc_ittiam/Android.mk
+include $(TI_OMX_AUDIO)/mp3_dec_ittiam/Android.mk
+include $(TI_OMX_AUDIO)/pcm_dec_ittiam/Android.mk
+include $(TI_OMX_AUDIO)/wma_dec_ittiam/Android.mk
+include $(TI_OMX_AUDIO)/wmapro_dec_ittiam/Android.mk
+include $(TI_OMX_VIDEO)/video_decode_ittiam/src/Android.mk
+include $(TI_OMX_VIDEO)/video_encode_ittiam/Android.mk
+
 
 #call to image
 include $(TI_OMX_IMAGE)/jpeg_enc/Android.mk
