@@ -41,6 +41,9 @@
  */
 #define MAX_SUB_ALLOCS 3
 
+#define FB_FLAG_RATIO_4_3	64	/* 0x0040 */
+#define FB_FLAG_RATIO_16_9	128	/* 0x0080 */
+
 typedef struct
 {
 	native_handle_t base;
