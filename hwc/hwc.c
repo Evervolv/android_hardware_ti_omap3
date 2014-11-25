@@ -108,6 +108,14 @@ struct omap3_hwc_ext {
 };
 typedef struct omap3_hwc_ext omap3_hwc_ext_t;
 
+/* copied from: KK bionic/libc/kernel/common/linux/fb.h */
+#ifndef FB_FLAG_RATIO_4_3
+#define FB_FLAG_RATIO_4_3 64
+#endif
+#ifndef FB_FLAG_RATIO_16_9
+#define FB_FLAG_RATIO_16_9 128
+#endif
+
 /* used by property settings */
 enum {
     EXT_ROTATION    = 3,        /* rotation while mirroring */
