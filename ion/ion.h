@@ -36,5 +36,6 @@ int ion_map(int fd, struct ion_handle *handle, size_t length, int prot,
 int ion_share(int fd, struct ion_handle *handle, int *share_fd);
 int ion_import(int fd, int share_fd, struct ion_handle **handle);
 int ion_ioctl(int fd, int req, void *arg);
+int ion_sync_fd(int fd, int handle_fd);
 }
 #endif
