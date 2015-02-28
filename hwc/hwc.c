@@ -45,7 +45,8 @@
 
 #define DIV_ROUND_UP(a, b) (((a) + (b) - 1) / (b))
 
-#include <video/dsscomp.h>
+/* For some reason this does not include it without an absolute path, which sucks totally. */
+#include "../../../../kernel/lge/p970/include/video/dsscomp.h"
 
 #include "hal_public.h"
 
@@ -58,7 +59,8 @@
 
 #define HAL_PIXEL_FORMAT_YUV_422                    27
 #define HAL_PIXEL_FORMAT_YUV_420                    19
-
+#define FB_FLAG_RATIO_4_3   64  /* 0x0040 */
+#define FB_FLAG_RATIO_16_9  128 /* 0x0080 */
 
 
 #define MIN(a,b)		  ((a)<(b)?(a):(b))
