@@ -20,9 +20,7 @@ LOCAL_SHARED_LIBRARIES := \
         libbridge
 
 LOCAL_LDLIBS += \
-        -lpthread \
-        -ldl \
-        -lsdl
+        -ldl
 
 LOCAL_CFLAGS := $(TI_OMX_CFLAGS)
 

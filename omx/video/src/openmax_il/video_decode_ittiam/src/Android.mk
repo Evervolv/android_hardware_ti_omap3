@@ -75,8 +75,6 @@ LOCAL_SHARED_LIBRARIES += \
         libPERF
 endif
 
-LOCAL_LDLIBS += -lpthread
-
 LOCAL_CFLAGS := \
         $(TI_OMX_CFLAGS) \
         -DANDROID \
