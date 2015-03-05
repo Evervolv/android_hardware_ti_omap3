@@ -19,10 +19,8 @@ LOCAL_SHARED_LIBRARIES := $(TI_OMX_COMP_SHARED_LIBRARIES) \
 
 
 LOCAL_LDLIBS += \
-    -lpthread \
     -ldl \
-    -lsdl
-    
+
 LOCAL_CFLAGS := $(TI_OMX_CFLAGS) -DOMAP_2430
 
 LOCAL_MODULE:= libOMX.TI.G726.encode

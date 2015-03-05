@@ -25,9 +25,7 @@ LOCAL_SHARED_LIBRARIES := \
         liblog
 
 LOCAL_LDLIBS += \
-        -lpthread \
         -ldl \
-        -lsdl
 
 LOCAL_CFLAGS := $(TI_OMX_CFLAGS) -DOMAP_2430
 

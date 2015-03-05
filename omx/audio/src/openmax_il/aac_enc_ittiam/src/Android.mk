@@ -32,9 +32,7 @@ LOCAL_SHARED_LIBRARIES := \
         liblog
 
 LOCAL_LDLIBS += \
-        -lpthread \
         -ldl \
-        -lsdl
 
 LOCAL_LDFLAGS := -Wl,--no-warn-shared-textrel,--no-enum-size-warning,--no-wchar-size-warning
 
