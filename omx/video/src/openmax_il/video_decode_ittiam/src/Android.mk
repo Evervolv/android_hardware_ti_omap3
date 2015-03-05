@@ -42,6 +42,7 @@ LOCAL_SRC_FILES:= \
         split_dsp_dec.c \
         mpeg4_asc_api.c
 
+LOCAL_ADDITIONAL_DEPENDENCIES := $(TI_OMX_COMP_ADDITIONAL_DEPENDENCIES)
 LOCAL_C_INCLUDES := \
         $(TI_OMX_COMP_C_INCLUDES) \
         $(TI_OMX_VIDEO)/video_decode_ittiam/inc \
@@ -74,8 +75,6 @@ ifeq ($(PERF_INSTRUMENTATION),1)
 LOCAL_SHARED_LIBRARIES += \
         libPERF
 endif
-
-LOCAL_LDLIBS += -lpthread
 
 LOCAL_CFLAGS := \
         $(TI_OMX_CFLAGS) \

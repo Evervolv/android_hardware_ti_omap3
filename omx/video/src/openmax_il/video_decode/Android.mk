@@ -9,6 +9,7 @@ LOCAL_SRC_FILES:= \
         src/OMX_VideoDec_Utils.c \
         src/OMX_VideoDecoder.c
 
+LOCAL_ADDITIONAL_DEPENDENCIES := $(TI_OMX_COMP_ADDITIONAL_DEPENDENCIES)
 LOCAL_C_INCLUDES := $(TI_OMX_COMP_C_INCLUDES) \
         $(TI_OMX_VIDEO)/video_decode/inc \
         $(HARDWARE_TI_OMAP3_BASE)/ion/ \
@@ -32,9 +33,6 @@ ifeq ($(PERF_INSTRUMENTATION),1)
 LOCAL_SHARED_LIBRARIES += \
         libPERF
 endif
-
-LOCAL_LDLIBS += \
-        -lpthread \
 
 LOCAL_CFLAGS := $(TI_OMX_CFLAGS) -DANDROID -DOMAP_2430 -DANDROID_QUIRK_LOCK_BUFFER
 

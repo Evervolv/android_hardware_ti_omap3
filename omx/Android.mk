@@ -70,6 +70,8 @@ ifeq ($(DVFS_ENABLED),1)
 TI_OMX_CFLAGS += -DDVFS_ENABLED
 endif
 
+TI_OMX_COMP_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+
 TI_OMX_COMP_C_INCLUDES := \
         $(TI_OMX_INCLUDES) \
         $(TI_BRIDGE_TOP)/inc \
@@ -78,7 +80,8 @@ TI_OMX_COMP_C_INCLUDES := \
         $(TI_OMX_SYSTEM)/perf/inc \
         $(TI_OMX_SYSTEM)/resource_manager/inc \
         $(TI_OMX_SYSTEM)/resource_manager_proxy/inc \
-        $(TI_OMX_SYSTEM)/omx_policy_manager/inc
+        $(TI_OMX_SYSTEM)/omx_policy_manager/inc \
+        $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
 
 ifeq ($(PERF_INSTRUMENTATION),1)
 include $(TI_OMX_SYSTEM)/perf/Android.mk
