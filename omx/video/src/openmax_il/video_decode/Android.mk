@@ -11,11 +11,11 @@ LOCAL_SRC_FILES:= \
 
 LOCAL_C_INCLUDES := $(TI_OMX_COMP_C_INCLUDES) \
         $(TI_OMX_VIDEO)/video_decode/inc \
-        $(HARDWARE_TI_OMAP3_BASE)/ion/ \
+        $(HARDWARE_TI_OMAP3_BASE)/ion \
+        $(HARDWARE_TI_OMAP3_BASE)/hwc \
         system/core/include/cutils \
         system/core/include/system \
-        $(HARDWARE_TI_OMAP3_BASE)/../../libhardware/include \
-	    $(HARDWARE_TI_OMAP3_BASE)/hwc/ \  	          
+        hardware/libhardware/include \
         #hardware/ti/omap3/liboverlay \
 
 

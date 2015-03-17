@@ -16,11 +16,29 @@
 # all OMAP4 devices.
 
 PRODUCT_PACKAGES := \
-	libdomx \
-	libOMX_Core \
+	hwcomposer.omap3 \
 	libstagefrighthw \
+	libbridge \
+	cexec.out \
+	libPERF \
+	libOMX_Core \
+	libLCML \
 	libion \
-	hwcomposer.omap4 \
-	smc_pa_ctrl \
-	tf_daemon
+	libtiutils \
+	libOMX.TI.720P.Decoder \
+	libOMX.TI.720P.Encoder \
+	libOMX.TI.Video.Decoder \
+	libOMX.TI.Video.encoder \
+	libOMX.TI.WBAMR.decode \
+	libOMX.TI.AAC.encode \
+	libOMX.TI.MP3.decode \
+	libOMX.TI.WBAMR.encode \
+	libOMX.TI.AAC.decode \
+	libOMX.TI.VPP \
+	libOMX.TI.JPEG.encoder \
+	libOMX.TI.AMR.encode \
+	libOMX.TI.AMR.decode \
+	libOMX.TI.JPEG.decoder
+
+PRODUCT_VENDOR_KERNEL_HEADERS := hardware/ti/omap3/kernel-headers
 

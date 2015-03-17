@@ -47,12 +47,12 @@ LOCAL_C_INCLUDES := \
         $(TI_OMX_VIDEO)/video_decode_ittiam/inc \
         $(TI_OMX_VIDEO)/video_decode_ittiam/inc/xdm \
         $(TI_OMX_VIDEO)/video_decode_ittiam/inc/misc \
-	hardware/ti/omap3/ion \
-	hardware/ti/omap3/hwc \
+        hardware/ti/omap3/ion \
+        hardware/ti/omap3/hwc \
         system/core/include/cutils \
         system/core/include/system \
         hardware/ti/omap3/omx/ducati/domx/system/omx_core/inc \
-        hardware/libhardware/include 
+        hardware/libhardware/include
       #  hardware/ti/omap3/liboverlay
 
 ifeq ($(PERF_INSTRUMENTATION),1)
