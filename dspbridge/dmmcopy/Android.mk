@@ -12,7 +12,7 @@ LOCAL_C_INCLUDES += \
 
 LOCAL_SHARED_LIBRARIES := \
 	libbridge \
-	libion
+	libion_ti
 	
 LOCAL_CFLAGS += -Wall -g -O2 -finline-functions -DOMAP_3430
 

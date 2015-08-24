@@ -46,7 +46,7 @@
 #define DIV_ROUND_UP(a, b) (((a) + (b) - 1) / (b))
 
 /* For some reason this does not include it without an absolute path, which sucks totally. */
-#include "../../../../kernel/lge/p970/include/video/dsscomp.h"
+#include "../../../../kernel/bn/encore/include/video/dsscomp.h"
 
 #include "hal_public.h"
 
