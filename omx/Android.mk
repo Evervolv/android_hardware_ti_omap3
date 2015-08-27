@@ -40,7 +40,8 @@ TI_OMX_AUDIO := $(TI_OMX_TOP)/audio/src/openmax_il
 TI_OMX_IMAGE := $(TI_OMX_TOP)/image/src/openmax_il
 
 TI_OMX_INCLUDES := \
-        $(TI_OMX_SYSTEM)/omx_core/inc
+        $(TI_OMX_SYSTEM)/omx_core/inc \
+	hardware/ti/omap3/kernel-headers
 
 TI_OMX_COMP_SHARED_LIBRARIES := \
         libdl \

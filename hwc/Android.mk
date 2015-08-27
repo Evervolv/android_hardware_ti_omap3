@@ -14,6 +14,9 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := hwcomposer.omap3
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS := -DLOG_TAG=\"ti_hwc\"
+LOCAL_C_INCLUDES += \
+	hardware/ti/omap3/kernel-headers
+
 # LOG_NDEBUG=0 means verbose logging enabled
 # LOCAL_CFLAGS += -DLOG_NDEBUG=0
 
